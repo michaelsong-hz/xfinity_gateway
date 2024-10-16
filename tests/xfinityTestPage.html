@@ -1,350 +1,300 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Xfinity</title>
-	<!--CSS-->
-	<link rel="stylesheet" type="text/css" media="screen" href="./cmn/css/common-min.css" />
-	<!--[if IE 6]>
+<title>Rogers</title>
+<!--CSS-->
+<input id="loc" name="loc" type="hidden" value="false"/>
+<link href="./cmn/css/common-min.css" media="screen" rel="stylesheet" type="text/css"/>
+<!--[if IE 6]>
 	<link rel="stylesheet" type="text/css" href="./cmn/css/ie6-min.css" />
 	<![endif]-->
-	<!--[if IE 7]>
+<!--[if IE 7]>
 	<link rel="stylesheet" type="text/css" href="./cmn/css/ie7-min.css" />
 	<![endif]-->
-	<link rel="stylesheet" type="text/css" media="print" href="./cmn/css/print.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="./cmn/css/lib/jquery.radioswitch.css" />
-	<!--Character Encoding-->
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<script type="text/javascript" src="./cmn/js/lib/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery-migrate-1.2.1.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery.validate.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery.alerts.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery.alerts.progress.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery.ciscoExt.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery.highContrastDetect.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery.radioswitch.js"></script>
-	<script type="text/javascript" src="./cmn/js/lib/jquery.virtualDialog.js"></script>
-	<script type="text/javascript" src="./cmn/js/utilityFunctions.js"></script>
-	<script type="text/javascript" src="./cmn/js/comcast.js"></script>
-	<style>
-		#div-skip-to {
-			position:relative;
-			left: 150px;
-			top: -300px;
-		}
-		#div-skip-to a {
-			position: absolute;
-			top: 0;
-		}
-		#div-skip-to a:active, #div-skip-to a:focus {
-			top: 300px;
-			color: #0000FF;
-			/*background-color: #b3d4fc;*/
-		}
-	</style>
-</head>
-<body>
-	<!--Main Container - Centers Everything-->
-	<div id="container">
-		<!--Header-->
-		<div id="header">
-			<h2 id="logo"><img src="./cmn/img/logo_xfinity.png" alt="Xfinity" title="Xfinity" /></h2>
-		</div> <!-- end #header -->
-		<div id='div-skip-to' style="display: none;">
-			<a id="skip-link" name="skip-link" href="#content">Skip to content</a>
-		</div>
-		<!--Main Content-->
-		<div id="main-content">
-<!-- $Id: at_a_glance.dory.php 2943 2009-08-25 20:58:43Z slemoine $ -->
-<div id="sub-header">
-	<!--dynamic generate user bar icon and tips-->
-		<script type="text/javascript">
-	$(document).ready(function() {
-	});
-</script>
-<style>
-	#status a:link, #status a:visited {
-		text-decoration: none;
-		color: #808080;
-	}
-</style>
-<ul id="status">
-	<li id="sta_batt" class="battery first-child"><div class="sprite_cont"><span class="bat-0" ><img src="./cmn/img/icn_battery.png"  alt="Battery icon" title="Battery icon" /></span></div><a role="toolbar" href="javascript: void(0);" tabindex="0">0%</a>
-		<!-- NOTE: When this value changes JS will set the battery icon -->
-	</li><li id="sta_inet" class="internet"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="Internet Online" /></span><a href="javascript: void(0);" tabindex="0">Internet<div class="tooltip">Loading...</div></a></li><li id="sta_wifi" class="wifi"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="Wi-Fi Online" /></span><a href="javascript: void(0);" tabindex="0">Wi-Fi<div class="tooltip">Loading...</div></a></li><li id="sta_moca" class="MoCA off"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="MoCA Offline" /></span><a href="javascript: void(0);" tabindex="0">MoCA<div class="tooltip">Loading...</div></a></li><li id="sta_fire" class="security last off"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="Security Off" /></span><a href="javascript: void(0);" tabindex="0"><span>Low Security</span><div class="tooltip">Loading...</div></a></li></ul>
-</div><!-- end #sub-header -->
-<!--div id="nav"-->
-<div style="float: left; margin: 0 20px 20px 0; width: 182px;">
-	<form action="check.php" method="post" id="pageForm"  onsubmit="return f();">
-	<div>
-		<table>
-			<tr>
-				<td><label for="username"><b>Username:</b></label></td>
-				<td><input type="text"     id="username" name="username" style="width: 120px;" class="text" autocomplete="off" /></td>
-			</tr>
-			<tr>
-				<td><label for="password"><b>Password:</b></label></td>
-				<td><input type="password" id="password" name="password" style="width: 120px;" class="text" autocomplete="off" /></td>
-			</tr>
-		</table>
-	</div>
-	<div class="form-btn">
-		<input type="submit" class="btn" value="Login" />
-	</div>
-</form>
-</div>
+<link href="./cmn/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="./cmn/css/lib/jquery.radioswitch.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="./cmn/css/lib/progressBar.css" media="screen" rel="stylesheet" type="text/css"/>
+<!--Character Encoding-->
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="noindex,nofollow" name="robots"/>
+<script src="./cmn/js/lib/jquery-3.4.1.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/jquery-migrate-1.2.1.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/jquery.validate.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/jquery.alerts.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/jquery.ciscoExt.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/jquery.highContrastDetect.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/jquery.radioswitch.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/jquery.virtualDialog.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/bootstrap.min.js" type="text/javascript"></script>
+<script src="./cmn/js/lib/bootstrap-waitingfor.js" type="text/javascript"></script>
+<!-- update the version of utilityFunctions.js if any changes is made to this js file otherwise browser will take the old js file from the cache memory -->
+<script src="./cmn/js/utilityFunctions.js?v=1" type="text/javascript"></script>
+<script src="./cmn/js/gateway.js" type="text/javascript"></script>
+<script src="./locale/CLDRPluralRuleParser.js"></script>
+<script src="./locale/jquery.i18n.js"></script>
+<script src="./locale/jquery.i18n.messagestore.js"></script>
+<script src="./locale/jquery.i18n.fallbacks.js"></script>
+<script src="./locale/jquery.i18n.language.js"></script>
+<script src="./locale/jquery.i18n.parser.js"></script>
+<script src="./locale/jquery.i18n.emitter.js"></script>
+<script src="./locale/jquery.i18n.emitter.bidi.js"></script>
+<script src="./locale/global.js?t=5763730"></script> <!-- add this -->
 <script type="text/javascript">
-$(document).ready(function() {
-	var sta_batt = "0";
-	var sta_inet = "true";
-	var sta_wifi = "true";
-	var sta_moca = "false";
-	var sta_fire = "Low";
-	var user_type = "admin";
-	/*
-	* get status when hover or tab focused one by one
-	* but for screen reader we have to load all status once
-	* below code can easily rollback
-	*/
-	// $("[id^='sta_']:not(#sta_batt)").one("mouseenter",function(){
-	// var theObj = $(this);
-	// var target = theObj.attr("id");
-	// var status = ("sta_fire"==target)? sta_fire : !(theObj.hasClass("off"));
-	// var jsConfig = '{"status":"'+status+'", "target":"'+target+'"}';
-	var jsConfig = '{"target":"'+"sta_inet,sta_wifi,sta_moca,sta_fire"
-	+'", "status":"'+sta_inet+','+sta_wifi+','+sta_moca+','+sta_fire+'"'
-	+', "user_type":"'+user_type+'"}';
-	$.ajax({
-		type: "POST",
-		url: "actionHandler/ajaxSet_index_userbar.php",
-		data: { configInfo: jsConfig },
-		dataType: "json",
-		success: function(msg) {
-			// theObj.find(".tooltip").html(msg.tips);
-			for (var i=0; i<msg.tags.length; i++){
-				$("#"+msg.tags[i]).find(".tooltip").html(msg.tips[i].replace(/-/g, "<br/>"));
-			}
-		},
-		error: function(){
-			// does something
-		}
-	});
-	// });
-	// show pop-up info when focus
-	$("#status a").focus(function() {
-		$(this).mouseenter();
-	});
-	// disappear previous pop-up
-	$("#status a").blur(function() {
-		$(".tooltip").hide();
-	});
-	comcast.page.init("Login", "nav-login");
-	$("#pageForm").validate({
-		errorElement : "p"
-		,errorContainer : "#error-msg-box"
-		,invalidHandler: function(form, validator) {
-			var errors = validator.numberOfInvalids();
-			if (errors) {
-				var message = errors == 1 ? 'You missed 1 field. It has been highlighted' : 'You missed ' + errors + ' fields. They have been highlighted';
-				$("div.error").html(message);
-				$("div.error").show();
-			} else {
-				$("div.error").hide();
-			}
-		}
-		,rules : {
-			username: {
-				required: true
-				,minlength: 3
-			}
-			,password: {
-				required: true
-				,minlength: 3
-			}
-		}
-		,messages: {
-			username: {
-				required: "Username cannot be blank. Please enter a valid username."
-			}
-			,password: {
-				required: "Password cannot be blank. Please enter a valid password."
-				,minlength: "Password must be at least 3 characters."
-			}
-		}
-	});
-	$("#username").focus();
-	$("#username").val("");
-	$("#password").val("");
-});
-function f()
-{
-	var username;
-	username = document.getElementById("username");
-	username.value = (username.value.toLowerCase());
-	//get the form id and submit it
-	var form = document.getElementById("pageForm");
-	form.submit();
-	return true;
+function alertLoc(msg){
+        var locale=$('#loc').val();
+        //locale for independent messages that cannot be binded to html elements
+        $.i18n().locale = locale;
+        $.i18n().load( {
+                        it: {
+                                "Please Login First!":"Per procedere, effettua l'accesso",
+				"Access Denied!":"Accesso Negato"
+                        }
+                });
+        alert($.i18n(msg));
 }
 </script>
-<div id="content">
-	<h1>Gateway > Login</h1>
-	<div id="educational-tip">
-		<p class="tip">Please login to view your Wi-Fi passkey or to view and edit detailed network settings.</p>
-	</div>
-<div class="module block" id="wifi-config"><div><h2>Wi-Fi Configuration</h2></div><div class="form-row even"><div class="form-row even"><span class="readonlyLabel">Wi-Fi SSID (2.4GHz):</span><span style="font-weight: bold; white-space: pre;" class="value">HELLO_WORLD</span></div><div class="form-row even"><span class="readonlyLabel">Wi-Fi Passkey (2.4GHz):</span><span class="value">Log in to view passkey</span></div></div><div class="form-row odd"><div class="form-row even"><span class="readonlyLabel">Wi-Fi SSID (5GHz):</span><span style="font-weight: bold; white-space: pre;" class="value">HELLO_WORLD</span></div><div class="form-row odd"><span class="readonlyLabel">Wi-Fi Passkey (5GHz):</span><span class="value">Log in to view passkey</span></div></div></div><div class="module block" id="home-network"><div><h2>Home Network</h2><div class="form-row"><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Ethernet On' /></span> <span class="readonlyLabel">Ethernet</span></div><div class="form-row odd"><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Wi-Fi On' /></span> <span class="readonlyLabel">Wi-Fi</span></div><div class="form-row off"><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='MoCA Off' /></span> <span class="readonlyLabel">MoCA</span></div>			<div class="form-row odd">
-				<span class="readonlyLabel">Firewall Security Level:</span> <span class="value">Low</span>
-			</div>
-		</div>
-	</div> <!-- end .module -->
-	<div id="internet-usage" class="module form">
-		<h2 style="margin-bottom: -5px;">Connected Devices</h2>
-		<table class="data" summary="This table displays Online Devices connected">
-		    <tr>
-			<th style="background: #f85f01;" id="active-icon" ></th>
-			<th style="background: #f85f01;" id="host-name" >Host Name</th>
-			<th style="background: #f85f01;" id="mac-address" >MAC Address</th>
-			<th style="background: #f85f01;" id="connection-type" >Connection Type</th>
-		    </tr>
-		<tr class='form-row '>
-							<td width='5%' class='readonlyLabel' headers='active-icon'><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Host On' /></span></td>
-							<td width='40%' class='readonlyLabel' headers='host-name'>TPLINK</td>
-							<td width='' class='readonlyLabel' headers='mac-address'>A0:F3:C1:00:00:00</td>
-							<td width='' class='readonlyLabel' headers='connection-type'>Wi-Fi 2.4G</td>
-						      </tr>
-						<tr class='form-row odd'>
-							<td width='5%' class='readonlyLabel' headers='active-icon'><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Host On' /></span></td>
-							<td width='40%' class='readonlyLabel' headers='host-name'>Colbys-iPhone</td>
-							<td width='' class='readonlyLabel' headers='mac-address'>18:65:90:00:00:00</td>
-							<td width='' class='readonlyLabel' headers='connection-type'>Wi-Fi 2.4G</td>
-						      </tr>
-						<tr class='form-row '>
-							<td width='5%' class='readonlyLabel' headers='active-icon'><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Host On' /></span></td>
-							<td width='40%' class='readonlyLabel' headers='host-name'>Carloss-iPhone</td>
-							<td width='' class='readonlyLabel' headers='mac-address'>48:A9:1C:00:00:00</td>
-							<td width='' class='readonlyLabel' headers='connection-type'>Wi-Fi 2.4G</td>
-						      </tr>
-						<tr class='form-row odd'>
-							<td width='5%' class='readonlyLabel' headers='active-icon'><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Host On' /></span></td>
-							<td width='40%' class='readonlyLabel' headers='host-name'>Colbys-Air</td>
-							<td width='' class='readonlyLabel' headers='mac-address'>70:56:81:00:00:00</td>
-							<td width='' class='readonlyLabel' headers='connection-type'>Wi-Fi 2.4G</td>
-						      </tr>
-						<tr class='form-row '>
-							<td width='5%' class='readonlyLabel' headers='active-icon'><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Host On' /></span></td>
-							<td width='40%' class='readonlyLabel' headers='host-name'>amazon-4d73d5f06</td>
-							<td width='' class='readonlyLabel' headers='mac-address'>CC:9E:A2:00:00:00</td>
-							<td width='' class='readonlyLabel' headers='connection-type'>Wi-Fi 2.4G</td>
-						      </tr>
-						<tr class='form-row odd'>
-							<td width='5%' class='readonlyLabel' headers='active-icon'><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Host On' /></span></td>
-							<td width='40%' class='readonlyLabel' headers='host-name'>Amandas-iPhone</td>
-							<td width='' class='readonlyLabel' headers='mac-address'>20:EE:28:00:00:00</td>
-							<td width='' class='readonlyLabel' headers='connection-type'>Wi-Fi 2.4G</td>
-						      </tr>
-						<tr class='form-row '>
-							<td width='5%' class='readonlyLabel' headers='active-icon'><span class="on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt='Host On' /></span></td>
-							<td width='40%' class='readonlyLabel' headers='host-name'>Amandas-MBP-2</td>
-							<td width='' class='readonlyLabel' headers='mac-address'>80:E6:50:00:00:00</td>
-							<td width='' class='readonlyLabel' headers='connection-type'>Wi-Fi 5G</td>
-						      </tr>
-								</table>
-			</div> <!-- end .module -->
-	<!--div class="module">
-		<div class="select-row">
-			<span class="readonlyLabel label">IGMP Snooping:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-						<ul id="IGMP_snooping_switch" class="radio-btns enable">
-				<li>
-					<input id="IGMP_snooping_enabled" name="IGMP_snooping" type="radio"  value="Enabled"/>
-					<label for="IGMP_snooping_enabled" >Enable </label>
-				</li>
-				<li class="radio-off">
-					<input id="IGMP_snooping_disabled" name="IGMP_snooping" type="radio"  value="Disabled" checked="checked"/>
-					<label for="IGMP_snooping_disabled" >Disable </label>
-				</li>
-			</ul>
-					</div>
-	</div-->
+</head>
+<body>
+<!--Main Container - Centers Everything-->
+<div id="container">
+<!--Header-->
+<div id="header">
+<p class="bridmar"> </p>
+<h2 class="logo_title" id="logo"><img alt="Rogers" src="cmn/syndication/img/logo_rogers.png" title="Rogers"/></h2>
+</div> <!-- end #header -->
+<div class="acs-hide" id="div-skip-to">
+<a href="#content" id="skip-link" name="skip-link">Skip to content</a>
+</div>
+<input id="locale" name="locale" type="hidden" value="false"/>
+<!--Main Content-->
+<div id="main-content">
+<div id="sub-header">
+<ul class="on" id="userToolbar">
+<li class="first-child"><span id="hiloc">Hi </span>admin</li>
+<li class="toolbar_style">  •  <a href="home_loggedout.jst" id="logout" tabindex="0">Logout</a></li>
+<li class="toolbar_style">  •  <a href="password_change.jst" id="chPass" tabindex="0">Change Password</a></li>
+</ul>
+<ul id="status">
+<li class="battery first-child" id="sta_batt"><div class="sprite_cont"><span class="bat-0"><img alt="Battery icon" id="batticonloc" src="./cmn/img/icn_battery.png" title="Battery icon"/></span></div><a href="javascript: void(0);" role="toolbar" tabindex="0">0%</a> <!-- NOTE: When this value changes JS will set the battery icon --> </li><li class="internet" id="sta_inet"><span class="value on-off sprite_cont"><img alt="Internet Online" src="./cmn/img/icn_on_off.png"/></span><a href="javascript: void(0);" tabindex="0">Internet<div class="tooltip" id="bat_remain">Loading...</div></a></li><li class="wifi" id="sta_wifi"><span class="value on-off sprite_cont"><img alt="WiFi Online" src="./cmn/img/icn_on_off.png"/></span><a href="javascript: void(0);" tabindex="0">Wi-Fi<div class="tooltip" id="bat_remain">Loading...</div></a></li><li class="MoCA off" id="sta_moca"><span class="value on-off sprite_cont"><img alt="MoCA Offline" src="./cmn/img/icn_on_off.png"/></span><a href="javascript: void(0);" tabindex="0">MoCA<div class="tooltip" id="bat_remain">Loading...</div></a></li><li class="security last off" id="sta_fire"><span class="value on-off sprite_cont"><img alt="Security Off" src="./cmn/img/icn_on_off.png"/></span><a href="javascript: void(0);" tabindex="0"><label id="secuserlocLow">Low Security</label><div class="tooltip" id="bat_remain">Loading...</div></a></li>
+</ul>
+</div><!-- end #sub-header -->
+<!-- $Id: nav.dory.jst 3155 2010-01-06 19:36:01Z slemoine $ -->
+<!--Nav-->
+<div id="nav"><ul><li class="nav-gateway"><a class="top-level" href="at_a_glance.jst" id="gatewayloc" role="menuitem" title="click to toggle sub menu">Gateway</a><ul><li class="nav-at-a-glance"><a href="at_a_glance.jst" id="ataglanceloc" role="menuitem">At a Glance</a></li><li class="nav-connection"><a href="javascript:;" id="connloc" role="menuitem" title="click to toggle sub menu">Connection</a><ul><li class="nav-connection-status"><a href="connection_status.jst" id="statloc" role="menuitem">Status</a></li><li class="nav-gateway-network"><a href="network_setup.jst" role="menuitem">Rogers Network</a></li><li class="nav-local-ip-network"><a href="local_ip_configuration.jst" id="locip" role="menuitem">Local IP Network</a></li><li class="nav-wifi-config"><a href="wireless_network_configuration.jst" id="wifiloc" role="menuitem">Wi-Fi</a></li><li class="nav-moca"><a href="moca.jst" role="menuitem">MoCA</a></li><li class="nav-wan-network"><a href="wan_network.jst" id="wannet" role="menuitem">WAN Network</a></li></ul></li><li class="nav-firewall"><a href="javascript:;" id="firwlloc" role="menuitem" title="click to toggle sub menu">Firewall</a> <ul> <li class="nav-firewall-ipv4"><a href="firewall_settings_ipv4.jst" role="menuitem">IPv4</a></li> <li class="nav-firewall-ipv6"><a href="firewall_settings_ipv6.jst" role="menuitem">IPv6</a></li> </ul> </li><li class="nav-software"><a href="software.jst" role="menuitem">Software</a></li><li class="nav-hardware"><a href="javascript:;" id="hrdloc" role="menuitem" title="click to toggle sub menu">Hardware</a><ul><li class="nav-system-hardware"><a href="hardware.jst" id="hardmess1" role="menuitem">System Hardware</a></li><li class="nav-battery"><a href="battery.jst" id="battloc" role="menuitem">Battery</a></li><li class="nav-lan"><a href="lan.jst" role="menuitem">LAN</a></li><li class="nav-wifi"><a href="wifi.jst" role="menuitem">Wireless</a></li></ul></li></ul></li><li class="nav-connected-devices"><a class="top-level" href="connected_devices_computers.jst" id="conndev" role="menuitem" title="click to toggle sub menu">Connected Devices</a><ul><li class="nav-cdevices"><a href="connected_devices_computers.jst" id="devloc" role="menuitem">Devices</a></li></ul></li><li class="nav-parental-control"><a class="top-level" href="managed_sites.jst" id="parloc" role="menuitem" title="click to toggle sub menu">Parental Control</a><ul><li class="nav-sites"><a href="managed_sites.jst" id="mansitesloc" role="menuitem">Managed Sites</a></li><li class="nav-services"><a href="managed_services.jst" id="manserloc" role="menuitem">Managed Services</a></li><li class="nav-devices"><a href="managed_devices.jst" id="mandevloc" role="menuitem">Managed Devices</a></li><li class="nav-parental-reports"><a href="parental_reports.jst" id="reploc" role="menuitem">Reports</a></li></ul></li><li class="nav-advanced"><a class="top-level" href="port_forwarding.jst" id="advloc" role="menuitem" title="click to toggle sub menu">Advanced</a><ul><li class="nav-port-forwarding"><a href="port_forwarding.jst" role="menuitem">Port Forwarding</a></li><li class="nav-port-triggering"><a href="port_triggering.jst" role="menuitem">Port Triggering</a></li><li class="nav-remote-management"><a href="remote_management.jst" id="remloc" role="menuitem">Remote Management</a></li><!--li class="nav-qos1"><a role="menuitem"  href="qos1.jst">QoS</a></li--><li class="nav-dmz"><a href="dmz.jst" role="menuitem">DMZ</a></li><li class="nav-device-discovery"><a href="device_discovery.jst" id="devdishead" role="menuitem">Device Discovery</a></li></ul></li><li class="nav-troubleshooting"><a class="top-level" href="troubleshooting_logs.jst" id="troubleloc" role="menuitem" title="click to toggle sub menu">Troubleshooting</a><ul><li class="nav-logs"><a href="troubleshooting_logs.jst" id="logsloc" role="menuitem">Logs</a></li><li class="nav-diagnostic-tools"><a href="network_diagnostic_tools.jst" id="diagloc" role="menuitem">Diagnostic Tools</a></li><li class="nav-wifi-spectrum-analyzer"><a href="wifi_spectrum_analyzer.jst" id="wifispecloc" role="menuitem">Wi-Fi Spectrum Analyzer</a></li><li class="nav-moca-diagnostics"><a href="moca_diagnostics.jst" id="mocdiagloc" role="menuitem">MoCA Diagnostics</a></li><li class="nav-restore-reboot"><a href="restore_reboot.jst" id="resetloc" role="menuitem">Reset/Restore Gateway</a></li><li class="nav-password"><a href="password_change.jst" id="chPass" role="menuitem">Change Password</a></li></ul></li></ul></div>
+<div class="cnt-device-main" id="content">
+<h1 id="connhead">Connected Devices &gt; Devices</h1>
+<div id="educational-tip">
+<h3 class="connectMess"><span id="connhom1">Managing your home network settings is now easier than ever.</span><br/><span id="">Please download the </span>Rogers Ignite HomeConnect<span id="sooninfoapp"> app</span><span id="connhom2"> to view and manage your list of connected/offline devices. You can block access to your home network for any device, among many other features and settings.</span>
+</h3>
+</div>
+<div class="module data" id="online-private">
+<h2 id="online-table-cap">Online Devices-Private Network</h2>
+<table class="data connected_dev" summary="This table displays Online Devices connected to priviate network">
+<tr>
+<th class="condev_host" id="host-name">Host Name</th>
+<th class="condev_ip" id="dhcp-or-reserved">DHCP/Reserved IP</th>
+<th id="rssi-level">RSSI Level</th>
+<th id="connection-type">Connection</th>
+<th id="edit-button"> </th>
+<th id="disconnect-button"> </th>
+</tr>
+<tr ''="">
+  <td headers="host-name">
+    <a class="label device-name private" href="javascript:void(0)" tabindex="0"><u>				TPLINK					</u></a> 
+    <div class="device-info">
+      <dl>
+        <dd><br/></dd>
+        <dd><b id="ipvaddloc">IPv4 Address</b><br/></dd>
+        10.0.0.225
+        <dd><b id="macaddlocnew">MAC Address</b><br/></dd>A0:F3:C1:00:00:00<dd><b id="commentnew">Comments</b><br/></dd>
+      </dl>
+    </div>
+  </td>
+  <td headers="dhcp-or-reserved" id="dhcpid">			DHCP			</td>
+  <td headers="rssi-level">			NA			</td>
+  <td headers="connection-type" id="ethcon"> <span id="ethcon">Ethernet</span> </td>
+  <td headers="edit-button"><input class="btn private edbutton" id="btn-1" tabindex="0" type="button" value="Edit"/></td>
+  <td headers="disconnect-button">		 		    </td>
+</tr>
+<tr '="" class="odd">
+  <td headers="host-name">
+    <a class="label device-name private" href="javascript:void(0)" tabindex="0"><u>				Colbys-iPhone					</u></a> 
+    <div class="device-info">
+      <dl>
+        <dd><br/></dd>
+        <dd><b id="ipvaddloc">IPv4 Address</b><br/></dd>
+        10.0.0.201
+        <dd><b id="ipv6addloc">IPv6 Address</b><br/></dd>
+        2607:fea8:fca0:841d:df06:9769:3263:ce3b
+        <dd><b id="loclinkadd">Local Link IPv6 Address</b><br/></dd>
+        fe80::2a42:79ca:cc1f:61d1
+        <dd><b id="macaddlocnew">MAC Address</b><br/></dd>18:65:90:00:00:00<dd><b id="commentnew">Comments</b><br/></dd>
+      </dl>
+    </div>
+  </td>
+  <td headers="dhcp-or-reserved" id="reserveip">			Reserved IP			</td>
+  <td headers="rssi-level">			-62 dBm			</td>
+  <td headers="connection-type" id="24_G"> <span id="24_G">Wi-Fi 2.4 GHz</span> </td>
+  <td headers="edit-button"><input class="btn private edbutton" id="btn-2" tabindex="0" type="button" value="Edit"/></td>
+  <td headers="disconnect-button">		 		    </td>
+</tr>
+<tr ''="">
+  <td headers="host-name">
+    <a class="label device-name private" href="javascript:void(0)" tabindex="0"><u>				Carloss-iPhone					</u></a> 
+    <div class="device-info">
+      <dl>
+        <dd><br/></dd>
+        <dd><b id="ipvaddloc">IPv4 Address</b><br/></dd>
+        10.0.0.47
+        <dd><b id="ipv6addloc">IPv6 Address</b><br/></dd>
+        2607:fea8:fca0:841d::bb47
+        <dd><b id="loclinkadd">Local Link IPv6 Address</b><br/></dd>
+        fe80::8eea:48ff:febc:3dc0
+        <dd><b id="macaddlocnew">MAC Address</b><br/></dd>48:A9:1C:00:00:00<dd><b id="commentnew">Comments</b><br/></dd>
+      </dl>
+    </div>
+  </td>
+  <td headers="dhcp-or-reserved" id="dhcpid">			DHCP			</td>
+  <td headers="rssi-level">			-65 dBm			</td>
+  <td headers="connection-type" id="5_G"> <span id="5_G">Wi-Fi 5 GHz</span> </td>
+  <td headers="edit-button"><input class="btn private edbutton" id="btn-3" tabindex="0" type="button" value="Edit"/></td>
+  <td headers="disconnect-button">		 		    </td>
+</tr>
+<tr '="" class="odd">
+  <td headers="host-name">
+    <a class="label device-name private" href="javascript:void(0)" tabindex="0"><u>				Colbys-Air					</u></a> 
+    <div class="device-info">
+      <dl>
+        <dd><br/></dd>
+        <dd><b id="ipvaddloc">IPv4 Address</b><br/></dd>
+        10.0.0.45
+        <dd><b id="macaddlocnew">MAC Address</b><br/></dd>70:56:81:00:00:00<dd><b id="commentnew">Comments</b><br/></dd>
+      </dl>
+    </div>
+  </td>
+  <td headers="dhcp-or-reserved" id="dhcpid">			DHCP			</td>
+  <td headers="rssi-level">			-69 dBm			</td>
+  <td headers="connection-type" id="5_G"> <span id="5_G">Wi-Fi 5 GHz</span> </td>
+  <td headers="edit-button"><input class="btn private edbutton" id="btn-4" tabindex="0" type="button" value="Edit"/></td>
+  <td headers="disconnect-button">		 		    </td>
+</tr>
+<tr ''="">
+  <td headers="host-name">
+    <a class="label device-name private" href="javascript:void(0)" tabindex="0"><u>				amazon-4d73d5f06					</u></a> 
+    <div class="device-info">
+      <dl>
+        <dd><br/></dd>
+        <dd><b id="ipvaddloc">IPv4 Address</b><br/></dd>
+        10.0.0.172
+        <dd><b id="ipv6addloc">IPv6 Address</b><br/></dd>
+        2607:fea8:fca0:841d:381c:df10:8459:10f
+        <dd><b id="loclinkadd">Local Link IPv6 Address</b><br/></dd>
+        fe80::32fd:38ff:fe6f:21a7
+        <dd><b id="macaddlocnew">MAC Address</b><br/></dd>CC:9E:A2:00:00:00<dd><b id="commentnew">Comments</b><br/></dd>
+      </dl>
+    </div>
+  </td>
+  <td headers="dhcp-or-reserved" id="dhcpid">			DHCP			</td>
+  <td headers="rssi-level">			-77 dBm			</td>
+  <td headers="connection-type" id="5_G"> <span id="5_G">Wi-Fi 5 GHz</span> </td>
+  <td headers="edit-button"><input class="btn private edbutton" id="btn-5" tabindex="0" type="button" value="Edit"/></td>
+  <td headers="disconnect-button">		 		    </td>
+</tr>
+<tr '="" class="odd">
+  <td headers="host-name">
+    <a class="label device-name private" href="javascript:void(0)" tabindex="0"><u>				Amandas-iPhone					</u></a> 
+    <div class="device-info">
+      <dl>
+        <dd><br/></dd>
+        <dd><b id="ipvaddloc">IPv4 Address</b><br/></dd>
+        10.0.0.85
+        <dd><b id="ipv6addloc">IPv6 Address</b><br/></dd>
+        2607:fea8:fca0:841d::e9d0
+        <dd><b id="loclinkadd">Local Link IPv6 Address</b><br/></dd>
+        fe80::3b:4d13:ce3:eb38
+        <dd><b id="macaddlocnew">MAC Address</b><br/></dd>20:EE:28:00:00:00<dd><b id="commentnew">Comments</b><br/></dd>
+      </dl>
+    </div>
+  </td>
+  <td headers="dhcp-or-reserved" id="dhcpid">			DHCP			</td>
+  <td headers="rssi-level">			-51 dBm			</td>
+  <td headers="connection-type" id="5_G"> <span id="5_G">Wi-Fi 5 GHz</span> </td>
+  <td headers="edit-button"><input class="btn private edbutton" id="btn-6" tabindex="0" type="button" value="Edit"/></td>
+  <td headers="disconnect-button">		 		    </td>
+</tr>
+<tr ''="">
+  <td headers="host-name">
+    <a class="label device-name private" href="javascript:void(0)" tabindex="0"><u>				Amandas-MBP-2					</u></a> 
+    <div class="device-info">
+      <dl>
+        <dd><br/></dd>
+        <dd><b id="ipvaddloc">IPv4 Address</b><br/></dd>
+        10.0.0.44
+        <dd><b id="ipv6addloc">IPv6 Address</b><br/></dd>
+        2607:fea8:fca0:841d:9c41:2184:8788:de1c
+        <dd><b id="loclinkadd">Local Link IPv6 Address</b><br/></dd>
+        fe80::f0fd:2e25:1808:1b6d
+        <dd><b id="macaddlocnew">MAC Address</b><br/></dd>80:E6:50:00:00:00<dd><b id="commentnew">Comments</b><br/></dd>
+      </dl>
+    </div>
+  </td>
+  <td headers="dhcp-or-reserved" id="dhcpid">			DHCP			</td>
+  <td headers="rssi-level">			-67 dBm			</td>
+  <td headers="connection-type" id="5_G"> <span id="5_G">Wi-Fi 5 GHz</span> </td>
+  <td headers="edit-button"><input class="btn private edbutton" id="btn-7" tabindex="0" type="button" value="Edit"/></td>
+  <td headers="disconnect-button">		 		    </td>
+</tr>
+<tfoot>
+<tr class="acs-hide">
+<td headers="host-name">null</td>
+<td headers="dhcp-or-reserved">null</td>
+<td headers="rssi-level">null</td>
+<td headers="connection-type">null</td>
+<td headers="edit-button">null</td>
+<td headers="disconnect-button">null</td>
+</tr>
+</tfoot>
+</table>
+<div class="btn-group">
+<a class="btn add-Client lan" href="javascript:void(0)" id="adddevres">Add Device with Reserved IP</a>
+</div>
+</div> <!-- end .module -->
+<div class="module forms data" id="offline-private">
+<h2 id="offline-table-cap">Offline Devices-Private Network</h2>
+<table class="data connected_dev" summary="this table display off line devices for private network">
+<tr>
+<th class="condev_host2" id="offline-device-host-name">Host Name</th>
+<th id="offline-device-dhcp-reserve">DHCP/Reserved IP</th>
+<th id="offline-device-conncection">Connection</th>
+<th id="offline-edit-button"> </th>
+<th id="offline-device-disconnect-button"> </th>
+</tr>
+<tfoot>
+<tr class="acs-hide">
+<td headers="offline-device-host-name">null</td>
+<td headers="offline-device-dhcp-reserve">null</td>
+<td headers="offline-device-conncection">null</td>
+<td headers="offline-device-disconnect-button">null</td>
+</tr>
+</tfoot>
+</table>
+</div> <!-- end .module -->
+<div class="form-btn">
+<a class="btn add-Client wifi" href="javascript:void(0)" id="addwifiwps" tabindex="0">Add Wi-Fi Protected Setup (WPS) Client</a>
+</div>
+<!--Home Security part-->
 </div><!-- end #content -->
-<!-- $Id: footer.php 2976 2009-09-02 21:42:51Z cporto $ -->
-		</div> <!-- end #main-content-->
-		<!--Footer-->
-		<div id="footer">
-			<ul id="footer-links">
-				<li class="first-child"><a href="http://www.xfinity.com" target="_blank">Xfinity.com</a></li>
-				<li style="list-style:none outside none; margin-left:10px">&#8226;&nbsp;&nbsp;<a href="https://customer.comcast.com/" target="_blank">customerCentral</a></li>
-				<li style="list-style:none outside none; margin-left:10px">&#8226;&nbsp;&nbsp;<a href="http://customer.comcast.com/userguides" target="_blank">User Guide</a></li>
-			</ul>
-		</div> <!-- end #footer -->
-	</div> <!-- end #container -->
-<script type="text/javascript">
-$(document).ready(function() {
-	// focus current page link, must after page.init()
-	//$('#nav [href="'+location.href.replace(/^.*\//g, '')+'"]').focus();		// need a "skip nav" function
-	$("#skip-link").click(function () {
-        $('#content').attr('tabIndex', -1).focus();  //this is to fix skip-link doesn't work on webkit-based Chrome
-    });
-	// change radio-btn status and do ajax when press "enter"
-	//$(".radio-btns a").keydown(function(event){
-	$(".radio-btns a").keypress(function(event){
-		var keycode = (event.keyCode ? event.keyCode : event.which);
-		if(13 == keycode){
-			if (!$(this).parent(".radio-btns").find("li").hasClass("selected")){
-				return;		// do nothing if has disabled class, don't detect disabled attr for radio-btn
-			}
-			// console.log($(this).find(":radio").hasClass("disabled"));
-			$(this).find(":radio").trigger('click');
-			$(this).find(":radio").trigger('change');
-			$(this).parent(".radio-btns").radioToButton();
-		}
-	});
-	// press Esc to skip menu and goto first control of content
-	// Esc:keypress:which is zero in FF, Esc:keypress is not work in Chrome
-	$("#nav").keydown(function(event){
-		var keycode = (event.keyCode ? event.keyCode : event.which);
-		if(27 == keycode){
-			$("#content textarea:eq(0)").focus();
-			$("#content input:eq(0)").focus();
-			$("#content a:eq(0)").focus();			// high priority element to focus			
-		}
-		// alert(event.keyCode+"---"+event.which+"---"+event.charCode);		
-	});
-	/* changes for high contrast mode */
-	$.highContrastDetect({useExtraCss: true, debugInNormalMode: false});
-	if ($.__isHighContrast) {
-		/* change plus/minus tree indicator of nav menu */
-		$("#nav a.top-level").prepend('<span class="hi_nav_top_indi">[+]</span>');
-		$("#nav a.folder").prepend('<span class="hi_nav_folder_indi">[+]</span>');
-		$("#nav a.top-level-active span.hi_nav_top_indi").text("[-]");
-		$("#nav a.folder").click(function() {
-			/* this should be called after nav state changed */
-			var $link = $(this);
-			if ($link.hasClass("folder-open")) {
-				$link.children("span.hi_nav_folder_indi").text("[-]");
-			}
-			else {
-				$link.children("span.hi_nav_folder_indi").text("[+]");
-			}
-		});
-	}
-	/*
-	*	these 3 sections for radio-btn accessibility, as a workaround, maybe should put at the front of .ready().
-	*/
-	// add "role" and "title" for ARIA, attr may need to be embedded into html
-	$(".radio-btns a").each(function(){
-		$(this).attr("role", "radio").attr("title", $(this).closest("ul").prev().text() + $(this).find("label").text());
-	});
-	// monitor "aria-checked" status for JAWS, NOTE: better depends on input element
-	$(".radio-btns").change(function(){
-		$(this).find("a").each(function(){
-			$(this).attr("aria-checked", $(this).find("input").attr("checked") ? "true" : "false");
-		});
-	});
-	//give the initial status, do not trigger change above
-	$(".radio-btns").find("a").each(function(){
-		$(this).attr("aria-checked", $(this).find("input").attr("checked") ? "true" : "false");
-	});
-});
-</script>	
+<!-- $Id: footer.jst 2976 2009-09-02 21:42:51Z cporto $ -->
+</div> <!-- end #main-content-->
+<!--Footer-->
+<div id="footer">
+<ul id="footer-links">
+<li class="first-child" id="footer_width"><a href="https://www.Rogers.com" target="_blank">Rogers.com</a></li>
+</ul>
+</div> <!-- end #footer -->
+</div> <!-- end #container -->
 </body>
 </html>
+
